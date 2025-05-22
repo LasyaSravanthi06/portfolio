@@ -1,0 +1,102 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sravanthi Maturi | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <button id="darkModeToggle">Dark Mode</button>
+
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="darkModeToggle">🌓</button></li>
+      </ul>
+    </nav>
+    <h1 id="home">Venkata Lasya Sravanthi Maturi</h1>
+    <p class="typing">AI/ML Engineer | Web Developer | Tech Enthusiast</p>
+    <p><span></span></p>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I'm a B.Tech student in Artificial Intelligence and Machine Learning at Vel Tech. Passionate about solving real-world problems using AI and building engaging web apps.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>B.Tech in AI & ML (2022-26), Vel Tech — CGPA: 8.26</li>
+      <li>Class 12, Sri Viveka Junior College — 88.6%</li>
+      <li>Class 10, Ongole Oxford EM High School — 96%</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-bar">Python <div class="bar" data-skill="90%"></div></div>
+    <div class="skill-bar">Java <div class="bar" data-skill="85%"></div></div>
+    <div class="skill-bar">HTML/CSS/JS <div class="bar" data-skill="95%"></div></div>
+    <div class="skill-bar">SQL <div class="bar" data-skill="80%"></div></div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project" onclick="toggleModal('modal1')">
+      <h3>AI-Powered Spectral Crop Management</h3>
+      <p>Click to read more</p>
+    </div>
+    <div class="project" onclick="toggleModal('modal2')">
+      <h3>Online Railway Reservation System</h3>
+      <p>Click to read more</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p>Email: sravanthimaturi060@gmail.com | Phone: +91 6304295841</p>
+    <p><a href="https://www.linkedin.com/in/sravanthi-maturi-9b1a51333/">LinkedIn</a> |
+       <a href="https://github.com/LasyaSravanthi06">GitHub</a></p>
+    <a href="M.V.L.Sravanthiresume.pdf" download class="resume-download">Download Resume (PDF)</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Sravanthi Maturi. All rights reserved.</p>
+  </footer>
+
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <span class="close" onclick="toggleModal('modal1')">&times;</span>
+      <h3>AI-Powered Spectral Crop Management</h3>
+      <p>AI-driven system using satellite & UAV imagery for crop monitoring, early disease detection, and pesticide optimization.</p>
+    </div>
+  </div>
+  <div class="modal" id="modal2">
+    <div class="modal-content">
+      <span class="close" onclick="toggleModal('modal2')">&times;</span>
+      <h3>Online Railway Reservation System</h3>
+      <p>Real-time booking platform with backend optimization and marketing integrations for higher uptime and reach.</p>
+    </div>
+  </div>
+  <div id="modal" class="modal">
+  <span id="modalClose" class="modal-close">✖</span>
+  <p id="modalContent"></p>
+</div>
+  <script src="main.js"></script>
+</body>
+</html>
