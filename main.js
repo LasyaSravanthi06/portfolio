@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Typing animation
   const titles = ["AI/ML Developer", "Web Developer", "Tech Enthusiast"];
-  let index = 0;
-  let charIndex = 0;
+  let index = 0, charIndex = 0;
   const typingTarget = document.querySelector("header p span");
 
   function typeText() {
@@ -16,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         charIndex = 0;
         index = (index + 1) % titles.length;
         typeText();
-      }, 2000);
+      }, 1500);
     }
   }
 
@@ -29,28 +28,29 @@ document.addEventListener('DOMContentLoaded', () => {
     bar.style.width = skill;
   });
 
-  // Form validation
-  document.getElementById('contactForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-    alert("Message sent successfully!");
-    this.reset();
-  });
-
-  // Dark Mode Toggle
+  // Dark mode toggle
   document.getElementById('darkModeToggle').addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
     document.querySelector('.modal').classList.toggle('dark-mode');
   });
 
-  // Project Modals
+  // Contact form
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Thank you! Your message has been sent.');
+    form.reset();
+  });
+
+  // Project modals
   const projects = document.querySelectorAll('.project');
   const modal = document.getElementById('modal');
   const modalContent = document.getElementById('modalContent');
   const modalClose = document.getElementById('modalClose');
 
   const projectDetails = [
-    "AI-Powered Spectral Crop Management System: Uses AI and satellite data to predict crop health, yield, and optimize pesticide use.",
-    "Online Railway Reservation System: Full-stack app to search, book, and manage train tickets with real-time updates."
+    "This system uses satellite and UAV spectral imagery with ML algorithms (Random Forest, CNN, k-NN) to detect diseases, estimate yield, and optimize resources for over 500 users.",
+    "A full-stack web platform for train reservations allowing users to search, book, and cancel tickets in real time, with 99.9% uptime and 40% faster processing."
   ];
 
   projects.forEach((project, i) => {
