@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);
+  color: #333;
+  line-height: 1.6;
+  transition: background 0.5s, color 0.5s;
+}
+
+body.dark-mode {
+  background: #1a1a1a;
+  color: #f1f1f1;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: #222;
+  color: white;
+  position: relative;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p span {
+  font-weight: bold;
+  color: #00adb5;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background: #00adb5;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 3rem 2rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #00adb5;
+  display: inline-block;
+}
+
+.skill-bar {
+  background: #eee;
+  border-radius: 20px;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+
+.skill-bar .bar {
+  height: 25px;
+  width: 0;
+  background: linear-gradient(to right, #00adb5, #007c91);
+  color: white;
+  padding-left: 1rem;
+  line-height: 25px;
+  transition: width 1.5s ease;
+}
+
+.project {
+  margin-bottom: 2rem;
+  background: #fff;
+  padding: 1rem;
+  border-left: 5px solid #00adb5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+form {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 0.75rem;
+  background: #00adb5;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #007c91;
+}
+
+footer {
+  text-align: center;
+  background: #393e46;
+  color: white;
+  padding: 1rem;
+}
+
+#darkModeToggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 0.5rem;
+  cursor: pointer;
+  background: #00adb5;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.modal.dark-mode {
+  background: #333;
+  color: white;
+}
+
+.modal-close {
+  float: right;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
