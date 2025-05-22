@@ -2,78 +2,120 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sravanthi Maturi | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VENKATA LASYA SRAVANTHI MATURI - Resume</title>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <button id="darkModeToggle">🌙</button>
-    <h1>Venkata Lasya Sravanthi Maturi</h1>
-    <p><span></span></p>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Particle background container -->
+  <div id="particles-js"></div>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#volunteering">Volunteering</a>
+    <a href="#languages">Languages</a>
+    <a href="#achievements">Achievements</a>
+  </nav>
+
+  <header class="section parallax" id="about">
+    <h1>VENKATA LASYA SRAVANTHI MATURI</h1>
+    <div class="typed-subtitle">
+      <span id="typed"></span>
+    </div>
+    <div class="social-logos">
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn" class="social-link" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#0A66C2" viewBox="0 0 24 24">
+          <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.25c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.25h-3v-4.5c0-1.07-.9-1.5-1.25-1.5s-1.75.43-1.75 1.5v4.5h-3v-9h3v1.2c.5-.9 1.4-1.2 2.25-1.2 1.63 0 3.25 1.25 3.25 3.75v5.25z"/>
+        </svg>
+      </a>
+      <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub" class="social-link" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#333" viewBox="0 0 24 24">
+          <path d="M12 .5c-6.627 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.6.113.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.204.084 1.837 1.238 1.837 1.238 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.76-1.605-2.665-.304-5.467-1.335-5.467-5.933 0-1.31.467-2.38 1.236-3.22-.124-.303-.536-1.527.117-3.176 0 0 1.008-.322 3.3 1.23a11.495 11.495 0 013.003-.403c1.018.005 2.045.138 3.003.403 2.29-1.552 3.296-1.23 3.296-1.23.655 1.65.243 2.873.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.625-5.48 5.922.43.37.814 1.096.814 2.21v3.28c0 .32.218.694.825.575 4.765-1.59 8.2-6.088 8.2-11.39 0-6.627-5.373-12-12-12z"/>
+        </svg>
+      </a>
+    </div>
+    <p class="contact-email">sravanthimaturi060@gmail.com | +91 6304295841</p>
   </header>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>I am a passionate AI & ML engineering student focused on building intelligent systems to solve real-world problems. I bring skills in machine learning, full-stack development, and a strong sense of teamwork.</p>
-    <a href="M.V.L.Sravanthiresume.pdf" class="btn" download>📄 Download Resume</a>
-  </section>
+  <main>
+    <section id="education" class="section parallax">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B. Tech in Artificial Intelligence and Machine Learning</strong>, Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology (2022-26) — CGPA: 8.26</li>
+        <li><strong>Class 12</strong>, Sri Viveka Junior College, Kandukur (State Board) (2021-22) — 88.6%</li>
+        <li><strong>Class 10</strong>, Ongole Oxford English Medium High School, Kandukur (State Board) (2019-20) — 96%</li>
+      </ul>
+    </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>B.Tech in AI & ML</strong>, Vel Tech (2022–26) – CGPA: 8.26</li>
-      <li>Class 12 – 88.6%</li>
-      <li>Class 10 – 96%</li>
-    </ul>
-  </section>
+    <section id="projects" class="section parallax">
+      <h2>Projects</h2>
+      <article>
+        <h3>AI-Powered Spectral Crop Management System</h3>
+        <ul>
+          <li>Developed an AI-driven crop monitoring system using satellite and UAV spectral imagery, remote sensing, and machine learning (Random Forest, k-NN, CNNs), improving crop health prediction accuracy by up to 87%</li>
+          <li>Processed and calibrated 1,000+ raw spectral images to reduce noise and normalize data, resulting in 25% improvement in analysis reliability</li>
+          <li>Implemented predictive analytics for early disease detection (92% accuracy), yield estimation (±10% variance), and resource optimization, reducing pesticide usage by 15%</li>
+          <li>Designed a responsive user interface using HTML, CSS, JavaScript, and integrated with a Python (Flask) backend, enabling real-time visualization for over 500 active users, resulting in a 30% improvement in user engagement</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Railway Reservation System</h3>
+        <ul>
+          <li>Developed a full-stack web-based platform for train reservations, allowing over 100 users to search trains, book/cancel tickets, and track booking status in real time, improving booking efficiency by 40%</li>
+          <li>Built and optimized backend databases to manage train schedules, seat availability, and passenger records</li>
+          <li>Deployed a fully functional live system after rigorous QA testing and hosting setup, achieving 99.9% uptime post-launch</li>
+          <li>Increased platform visibility and traffic by 60% through targeted digital marketing strategies and social media integration</li>
+        </ul>
+      </article>
+    </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skill-bar">Python<div class="bar" data-skill="90%"></div></div>
-    <div class="skill-bar">Java<div class="bar" data-skill="85%"></div></div>
-    <div class="skill-bar">HTML/CSS/JS<div class="bar" data-skill="95%"></div></div>
-    <div class="skill-bar">SQL<div class="bar" data-skill="80%"></div></div>
-  </section>
+    <section id="skills" class="section parallax">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Technical:</strong> Python, Java, HTML, CSS, JavaScript, SQL</li>
+        <li><strong>Professional:</strong> Communication (Written & Verbal), Leadership & Team Management, Strategic Thinking</li>
+      </ul>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">AI-Powered Spectral Crop Management System</div>
-    <div class="project">Online Railway Reservation System</div>
-  </section>
+    <section id="volunteering" class="section parallax">
+      <h2>Volunteering & Positions</h2>
+      <ul>
+        <li><strong>National Service Scheme:</strong> Volunteered with orphanages and charitable trusts, supporting community welfare initiatives and organizing donation drives.</li>
+        <li>Participated in 3 official parades as part of the NSS Parade Contingent, representing the institution with discipline and teamwork.</li>
+        <li><strong>Event Management:</strong> Led the planning and execution of various technical and non-technical events, including university hackathons, contributing to a vibrant and collaborative campus culture.</li>
+        <li>Hosted over 5 major campus events as emcee, effectively engaging audiences and promoting student involvement across diverse activities.</li>
+        <li>Active participation in university events, games & workshops showcasing versatility and team spirit.</li>
+      </ul>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <form id="contactForm">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <p>Email: <a href="mailto:sravanthimaturi060@gmail.com">sravanthimaturi060@gmail.com</a> | Phone: +91 6304295841</p>
-    <p><a href="https://www.linkedin.com/in/sravanthi-maturi-9b1a51333/">LinkedIn</a> |
-       <a href="https://github.com/LasyaSravanthi06">GitHub</a></p>
-  </section>
+    <section id="languages" class="section parallax">
+      <h2>Languages</h2>
+      <p>Telugu, English, Tamil, Hindi</p>
+    </section>
+
+    <section id="achievements" class="section parallax">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Winner | Kabaddi game (2020)</li>
+        <li>Winner | Science Expo (2020)</li>
+        <li>Winner | Debate Competition (2019)</li>
+      </ul>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Sravanthi Maturi</p>
+    <p>© 2025 VENKATA LASYA SRAVANTHI MATURI. All rights reserved.</p>
   </footer>
 
-  <!-- Modal for project details -->
-  <div id="modal" class="modal">
-    <span id="modalClose" class="modal-close">✖</span>
-    <p id="modalContent"></p>
-  </div>
-
-  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
